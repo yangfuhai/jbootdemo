@@ -1,3 +1,10 @@
+# jboot
+
+jboot is a similar springboot project base on jfinal and undertow,we have using in product environment.
+
+
+jboot : https://github.com/yangfuhai/jboot
+
 
 步骤：
 * 1、使用resources下的jbootdemo.sql建立数据库和建表.
