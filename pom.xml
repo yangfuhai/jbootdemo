@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.jboot</groupId>
+    <artifactId>jbootdemo</artifactId>
+    <version>1.0</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.jboot</groupId>
+            <artifactId>jboot</artifactId>
+            <version>1.0-alpha2.1</version>
+        </dependency>
+    </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>appassembler-maven-plugin</artifactId>
+                <version>1.10</version>
+                <configuration>
+
+
+                    <assembleDirectory>${project.build.directory}/app</assembleDirectory>
+                    <repositoryName>lib</repositoryName>
+                    <binFolder>bin</binFolder>
+                    <configurationDirectory>webRoot</configurationDirectory>
+                    <copyConfigurationDirectory>true</copyConfigurationDirectory>
+                    <configurationSourceDirectory>src/main/resources</configurationSourceDirectory>
+                    <repositoryLayout>flat</repositoryLayout>
+                    <encoding>UTF-8</encoding>
+                    <logsDirectory>logs</logsDirectory>
+                    <tempDirectory>tmp</tempDirectory>
+
+                    <programs>
+                        <program>
+                            <mainClass>io.jboot.Jboot</mainClass>
+                            <id>jboot</id>
+                            <platforms>
+                                <platform>windows</platform>
+                                <platform>unix</platform>
+                            </platforms>
+                            <jvmSettings>
+                                <extraArguments>
+                                    <extraArgument>-server</extraArgument>
+                                    <extraArgument>-Xmx2G</extraArgument>
+                                    <extraArgument>-Xms2G</extraArgument>
+                                </extraArguments>
+                            </jvmSettings>
+                        </program>
+                    </programs>
+                </configuration>
+            </plugin>
+
+        </plugins>
+
+    </build>
+
+
+</project>
