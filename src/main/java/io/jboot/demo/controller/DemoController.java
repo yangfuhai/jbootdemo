@@ -16,6 +16,7 @@ public class DemoController extends JbootController {
     UserService userService;
 
     public void index() {
+
         render("index.html");
     }
 
@@ -23,6 +24,6 @@ public class DemoController extends JbootController {
 
         List<User> users = userService.findAll();
 
-        setAttr("users",users);
+        setAttr("users", users);
     }
 }
