@@ -2,7 +2,7 @@ package io.jboot.demo.controller;
 
 
 import io.jboot.demo.model.User;
-import io.jboot.demo.service.UserService;
+import io.jboot.demo.service.UserServiceImpl;
 import io.jboot.web.controller.JbootController;
 import io.jboot.web.controller.annotation.RequestMapping;
 
@@ -13,7 +13,7 @@ import java.util.List;
 public class DemoController extends JbootController {
 
     @Inject
-    UserService userService;
+    UserServiceImpl userService;
 
     public void index() {
 
