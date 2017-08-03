@@ -136,14 +136,14 @@
     <!-- root级别   DEBUG -->
     <root>
         <!-- 打印debug级别日志及以上级别日志 -->
-        <level value="debug"/>
+        <level value="info"/>
         <!-- 控制台输出 -->
-        <appender-ref ref="error"/>
+        <appender-ref ref="console"/>
         <!-- 文件输出 -->
-        <appender-ref ref="ERROR"/>
-        <appender-ref ref="INFO"/>
-        <appender-ref ref="WARN"/>
-        <appender-ref ref="DEBUG"/>
-        <appender-ref ref="TRACE"/>
+        <!--<appender-ref ref="ERROR"/>-->
+        <!--<appender-ref ref="INFO"/>-->
+        <!--<appender-ref ref="WARN"/>-->
+        <!--<appender-ref ref="DEBUG"/>-->
+        <!--<appender-ref ref="TRACE"/>-->
     </root>
 </configuration>

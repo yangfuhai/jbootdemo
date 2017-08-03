@@ -12,7 +12,7 @@ public class ModelGen {
         String modelPackage = "io.jboot.demo";
 
         String dbHost = "127.0.0.1";
-        String dbName = "jbootdemo";
+        String dbName = "jbootdamo1";
         String dbUser = "root";
         String dbPassword = "";
 
