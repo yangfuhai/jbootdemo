@@ -9,14 +9,11 @@
     <version>1.0</version>
 
     <dependencies>
-
-
         <dependency>
             <groupId>io.jboot</groupId>
             <artifactId>jboot</artifactId>
-            <version>1.0-beta3</version>
+            <version>1.1.0</version>
         </dependency>
-
 
         <dependency>
             <groupId>ch.qos.logback</groupId>
@@ -30,8 +27,6 @@
             <artifactId>logback-classic</artifactId>
             <version>1.1.11</version>
         </dependency>
-
-
     </dependencies>
 
 
@@ -81,13 +76,6 @@
         </plugins>
 
     </build>
-
-    <!--<repositories>-->
-        <!--<repository>-->
-            <!--<id>nexus</id>-->
-            <!--<url>http://maven-server:8081/repository/maven-releases/</url>-->
-        <!--</repository>-->
-    <!--</repositories>-->
 
 
 </project>
