@@ -1,7 +1,7 @@
 package io.jboot.demo.websocket;
 
+
 import io.jboot.Jboot;
-import io.jboot.demo.aop.UserService;
 import io.jboot.web.controller.JbootController;
 import io.jboot.web.controller.annotation.RequestMapping;
 
