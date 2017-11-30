@@ -5,7 +5,6 @@ import io.jboot.Jboot;
 import io.jboot.web.controller.JbootController;
 import io.jboot.web.controller.annotation.RequestMapping;
 
-import javax.inject.Inject;
 
 /**
  * @author 徐海峰 （xhf6731202@126.com）
