@@ -14,6 +14,7 @@ public class JsrWebSocketEndPoint {
 
     @OnMessage
     public void message(String message, Session session) {
+        System.out.println("收到消息，消息内容为：" + message);
         for (Session s : session.getOpenSessions()) {
             s.getAsyncRemote().sendText(message);
         }
